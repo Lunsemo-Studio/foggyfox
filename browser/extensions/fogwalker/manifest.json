@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Fogwalker",
+    "description": "Wander as if in a fog",
+    "version": "1.0.0",
+
+	"browser_specific_settings": {
+		"gecko": {
+		  "id": "fogwalker@mozilla.org"
+		}
+	},
+	"hidden": false,
+
+	"permissions": [
+		"idle",
+		"notifications",
+		"privacy",
+		"proxy",
+		"nativeMessaging",
+		"scripting",
+		"storage",
+		"webRequest"
+	],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Enter the Mist"
+    }
+}
