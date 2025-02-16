@@ -1,4 +1,4 @@
-Lunsemo Foggyfox is a browser, based on Mozilla Firefox, bundled with a Hiddify-Core proxy-server, which source code can be found here: https://github.com/hiddify/hiddify-core/
+Lunsemo Foggyfox is a browser based on Mozilla Firefox, bundled with a Hiddify-Core proxy-server, which source code can be found here: https://github.com/hiddify/hiddify-core/
 
 To make browser work as intended, please, download one of releases of Hiddify-Core: https://github.com/hiddify/hiddify-core/releases/
 
@@ -13,7 +13,7 @@ Lunsemo Foggyfox — это браузер на основе Mozilla Firefox, в
 
 Чтобы браузер работал как задумано, загрузите один из релизов Hiddify-Core: https://github.com/hiddify/hiddify-core/releases/
 
-Сначала вам нужно указать аргументы запуска в layer-app (в нашем случае скрипт python) и создать манифест собственного приложения,
-затем расширение Fogwalker, расположенное в "browser/extensions", подключается к собственному приложению Hiddify-Core при запуске браузера.
+Сначала вам нужно указать аргументы запуска в layer-app (в нашем случае скрипт python) и создать манифест нативного приложения,
+затем расширение Fogwalker, расположенное в "browser/extensions", подключается к нативному приложению Hiddify-Core при запуске браузера.
 
-Дополнительные инструкции будут предоставлены, как только браузер будет ближе к готовности.
+Дополнительные инструкции будут предоставлены, как только браузер будет ближе к готовому состоянию.
