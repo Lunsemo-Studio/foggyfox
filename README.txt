@@ -1,21 +1,19 @@
-An explanation of the Firefox Source Code Directory Structure and links to
-project pages with documentation can be found at:
+Lunsemo Foggyfox is a browser, based on Mozilla Firefox, bundled with a Hiddify-Core proxy-server, which source code can be found here: https://github.com/hiddify/hiddify-core/
 
-    https://firefox-source-docs.mozilla.org/contributing/directory_structure.html
+To make browser work as intended, please, download one of releases of Hiddify-Core: https://github.com/hiddify/hiddify-core/releases/
 
-For information on how to build Firefox from the source code and create the patch see:
+Firstly, you need to provide launch arguments in layer-app (in our case python script) and create manifest of native app,
+then, the Fogwalker extension, located at "browser/extensions", connects to native Hiddify-Core app on browser startup.
 
-    https://firefox-source-docs.mozilla.org/contributing/contribution_quickref.html
+More instructions will be provided once the browser is more polished.
 
-If you have a question about developing Firefox, and can't find the solution
-on https://firefox-source-docs.mozilla.org/, you can try asking your question on Matrix at chat.mozilla.org in `Introduction` (https://chat.mozilla.org/#/room/#introduction:mozilla.org) channel.
+RU:
 
+Lunsemo Foggyfox — это браузер на основе Mozilla Firefox, в комплекте с прокси-сервером Hiddify-Core, исходный код которого можно найти здесь: https://github.com/hiddify/hiddify-core/
 
-Nightly development builds can be downloaded from:
+Чтобы браузер работал как задумано, загрузите один из релизов Hiddify-Core: https://github.com/hiddify/hiddify-core/releases/
 
-    https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/
-            - or -
-    https://www.mozilla.org/firefox/channel/desktop/#nightly
+Сначала вам нужно указать аргументы запуска в layer-app (в нашем случае скрипт python) и создать манифест собственного приложения,
+затем расширение Fogwalker, расположенное в "browser/extensions", подключается к собственному приложению Hiddify-Core при запуске браузера.
 
-Keep in mind that nightly builds, which are used by Firefox developers for
-testing, may be buggy.
+Дополнительные инструкции будут предоставлены, как только браузер будет ближе к готовности.
