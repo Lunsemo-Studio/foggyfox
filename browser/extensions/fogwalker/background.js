@@ -10,15 +10,10 @@ port.onMessage.addListener((response) => {
 
 function Setup() {
     let config = {
-        mode: "fixed_servers",
-        rules: {
-            singleProxy: {
-                scheme: "http",
-                host: "127.0.0.1",
-                port: 12334
-            },
-            bypassList: ["<local>"]
-        }
+        proxyType: "manual",
+        http: "127.0.0.1:2334",
+        httpProxyAll: true,
+        passthrough: "<local>",
     };
 
     browser.proxy.settings.set({
@@ -31,12 +26,11 @@ function Setup() {
     });
 
     chrome.browserAction.onClicked.addListener(() => {
-        //chrome.tabs.create({url: "http://localhost:6756/ui/?secret=-oLqenny7-qz8EFD"});
+        chrome.tabs.create({url: "http://localhost:6756/ui/?secret=-oLqenny7-qz8EFD"});
         console.log("Sending:   ping");
         port.postMessage("ping");
     });
 }
-
 
 browser.runtime.onStartup.addListener(Setup);
 
